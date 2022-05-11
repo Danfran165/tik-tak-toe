@@ -14,11 +14,11 @@ function placeXOrO(squareNumber) {
         //this condition checks whos turn it is.
         if (activePlayer === "X") {
             //if activePlayer is equal to 'X' the x.png is placed in html.
-            select.style.backgroundImage = 'url ("./images/X.png")';
+            select.style.backgroundImage = 'url("./images/X.png")';
             //Active player may only be 'x' OR 'O' so if not 'x' it must be 'o'
         } else {
             //if activePlayer is equal to 'o' the o.png is placed in html
-            select.style.backgroundImage = 'url ("./images/O.png")';
+            select.style.backgroundImage = 'url("./images/O.png")';
         }
         //squareNumber and activePlayer are concatenated together and added to array.
         selectedSquares.push(squareNumber + activePlayer);
@@ -76,7 +76,7 @@ function computersTurn() {
 //drawWinLine function is called to draw line if condition is met
 function checkWinConditions() {
     //x o, 1, 2 condition
-    if (arrayIncludes ('OX', '1X', '2X')) {drawWinLine(50, 100, 558, 100) }
+    if (arrayIncludes ('0X', '1X', '2X')) {drawWinLine(50, 100, 558, 100) }
     //x , 3, 4, 5 condition
     else if (arrayIncludes('3X', '4X', '5X')) {drawWinLine(50, 304, 558, 304) }
     //X, 6, 7, 8 CONDITION
