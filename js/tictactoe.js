@@ -190,14 +190,14 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
             //this method draws everything we laid out above
             c.stroke();
             //this condition checks if weve reached the endpoint
-            if (x1 <= x2 && y <= y2) {
+            if (x1 <= x2 && y1 <= y2) {
                 //this condition adds 10 to the previous end x point
                 if (x <x2) {x += 10; }
                 //this condition adds 10 to the previous end y point
-            if (y < y2) {y +=10; }            
+            if (y <y2) {y += 10; }            
             //this condition cancels our animation loop
             //if weve reach the end points
-            if (x >= x2 && y > y2) { cancelAnimationFrame(animationLoop) ; }
+            if (x >= x2 && y >= y2) { cancelAnimationFrame(animationLoop) ; }
 }
             //this condition is similar to the one above
             //this is necessary for the 6, 4, 2 win condition
